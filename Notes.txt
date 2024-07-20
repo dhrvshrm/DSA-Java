@@ -1,0 +1,35 @@
+- Prerequisites:
+    1. JDK (with JAVA_HOME set and added to PATH with LTS version)
+    2. Git (with GIT_HOME set and added to PATH with LTS version)
+    3. Eclipse/VSCode (with latest version)
+
+- How JAVA code is running in the system?
+    JDK (+ Development Tools) -> JRE (+ Libraries) -> JVM (+ Interpreter) -> OS (+ Hardware) -> Output
+
+    - Below is the flow of how JAVA code is executed in the system:
+        JAVA Code -> Compilation -> Byte Code 
+        -> Interpretation -> Execution -> JIT Compilation 
+        -> Garbage Collection -> Security
+        -> Output
+
+    - Compilation: The JAVA code is compiled into byte code using javac command.
+    - Interpretation: The byte code is interpreted by the JVM (Java Virtual Machine) and executed.
+    - Execution: The JVM executes the byte code and produces the output.
+    - JIT Compilation: The JVM uses JIT (Just-In-Time) compilation to improve the performance of the code.
+    - Garbage Collection: The JVM performs garbage collection to free up memory.
+    - Security: The JVM provides security by running the code in a sandbox environment. 
+
+- How JAVA code is executed in the system?
+    1. Write a JAVA code and save it with .java extension.
+    2. Compile the code using javac command.
+    3. Run the code using java command.
+
+- How to compile and run JAVA code?
+    1. Open command prompt.
+    2. Go to the directory where the JAVA file is saved.
+    3. Compile the code using javac command.
+        Syntax: javac <filename>.java
+        Example: javac Hello.java
+    4. Run the code using java command.
+        Syntax: java <filename>
+        Example: java Hello
