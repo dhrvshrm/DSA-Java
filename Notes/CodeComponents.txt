@@ -12,21 +12,67 @@ JAVA code has the following components:
 
 2. Import Statements: Import statements are used to import classes, interfaces, and packages from other packages into the current package.
 
-3. Class: A class is a blueprint for creating objects. It defines the properties and behaviors of objects.
+3. Class & Functions:
+    - A class is a blueprint for creating objects. It defines the properties and behaviors of objects.
+    - A function is a block of code that performs a specific task. It can take input parameters and return a value.
+
+    e.g. - class:
+    public class HelloWorld {
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+    }
+
+    e.g. - function:
+    public void greet() {
+        System.out.println("Hello, World!");
+    }
+
 
 4. Main Method: The main method is the entry point of a JAVA program. It is the starting point of execution for the JVM.
 
+    e.g. :
+    public static void main(String[] args) {
+        // Code to be executed
+    }
+
 5. Variables: Variables are used to store data values. They have a data type and a name.
+
+    e.g. :
+    int age = 25;
+    String
 
 6. Methods: Methods are blocks of code that perform a specific task. They can take input parameters and return a value.
 
+    e.g. :
+    public void greet() {
+        System.out.println("Hello, World!");
+    }
+
 7. Comments: Comments are used to document the code and make it more readable. They are ignored by the compiler.
+
+    e.g. :
+    // This is a single-line comment
+    /* This is a
+       multi-line comment */
 
 8. Statements: Statements are used to perform actions in a JAVA program. They can be assignments, method calls, loops, conditionals, etc.
 
+    e.g. :
+    int x = 10;
+    System.out.println("Hello, World!");
+
 9. Data Types: Data types define the type of data that can be stored in a variable. They can be primitive or reference types.
 
+    e.g. :
+    int age = 25;
+    String
+
 10. Operators: Operators are used to perform operations on variables and values. They can be arithmetic, relational, logical, bitwise, etc.
+
+    e.g. :
+    int x = 10 + 5;
+    boolean isTrue = true && false;
 
 11. Control Flow Statements: Control flow statements are used to control the flow of execution in a JAVA program. They include if-else, switch, loops, etc.
 
