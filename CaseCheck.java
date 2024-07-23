@@ -9,8 +9,10 @@ public class CaseCheck {
             System.out.println("Lowercase");
         } else if (character >= 'A' && character <= 'Z') {
             System.out.println("Uppercase");
+        } else if (character >= 0) {
+            System.out.println("Number");
         } else {
-            System.out.println("Invalid");
+            System.out.println("Invalid Input");
         }
     }
 }
