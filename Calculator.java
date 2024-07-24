@@ -3,41 +3,47 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the first number: ");
 
+        System.out.println("Enter the first number: ");
         int a = in.nextInt();
+
         System.out.println("Enter the second number: ");
         int b = in.nextInt();
+
         System.out.println("Enter the operation: ");
+        char operator = in.next().charAt(0);
 
-        while (true) {
+        boolean isOperator = operator == '+' || operator == '-' || operator == '*' ||
+                operator == '/' || operator == '%';
 
-            char operator = in.next().charAt(0);
-            if (operator == '+' || operator == '-' || operator == '*' || operator == '/' || operator == '%') {
-                if (operator == '+') {
+        if (isOperator) {
+            switch (operator) {
+                case '+':
                     System.out.println(a + b);
-                }
-                if (operator == '-') {
+                    break;
+                case '-':
                     System.out.println(a - b);
-                }
-                if (operator == '*') {
+                    break;
+                case '*':
                     System.out.println(a * b);
-                }
-                if (operator == '/') {
+                    break;
+                case '/':
                     if (b != 0) {
                         System.out.println(a / b);
                     } else {
-                        System.out.println("Division by 0 is not a valid operation");
+                        System.out.println("Error: Division by zero");
                     }
-                }
-                if (operator == '%') {
-                    System.out.println(a % b);
-                }
-                break;
-            } else {
-                System.out.println("Invalid operator");
+                    break;
+                case '%':
+                    if (b != 0) {
+                        System.out.println(a % b);
+                    } else {
+                        System.out.println("Error: Division by zero");
+                    }
+                    break;
             }
+        } else {
+            System.out.println("Invalid operator");
         }
-
     }
 }
