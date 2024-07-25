@@ -16,6 +16,7 @@ public class Fibonacci {
             int next = 1;
             int count = 2;
 
+
             while (count <= number) {
                 int temp = next;
                 next = prev + next;
@@ -24,6 +25,6 @@ public class Fibonacci {
             }
             System.out.println(next);
         }
-        in.close();
+        in.close(); // Close the scanner
     }
 }
